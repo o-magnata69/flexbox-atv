@@ -146,6 +146,12 @@
   padding: 20px;
 }
 
+.article2 {
+  flex: 1;
+  background-color: #929292;
+  padding: 20px;
+}
+
 .sidebar {
   flex: 1;
   background-color: #888;
