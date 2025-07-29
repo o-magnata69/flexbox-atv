@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex-box</title>
-  <link rel="stylesheet" href="/css/estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flex-box - Página 3</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <div id="container">
     <div id="menu">
       <ul>
         <li class="item"><a href="/index.html">01</a></li>
         <li class="item"><a href="/02.html">02</a></li>
-        <li class="item"><a href="/03.html">03</a></li>
+        <li class="item"><a href="/03.html" class="active">03</a></li>
       </ul>
     </div>
     <div id="layout">
+      <div class="menu-container">
+        <div class="menu-item">01</div>
+        <div class="menu-item">02</div>
+        <div class="menu-item">03</div>
+        <div class="menu-item">04</div>
+        <div class="menu-item">05</div>
+      </div>
 
-      <!-- COLOQUE O SEU CÓDIGO AQUI DENTRO DESSA DIV -->
+      <div class="portal-layout">
+        <header class="header">Cabeçalho</header>
+        <aside class="sidebar">Menu</aside>
+        <main class="main-content">
+          <div class="article">Artigo</div>
+          <div class="article">Artigo</div>
+        </main>
+        <footer class="portal-footer">Rodapé</footer>
+      </div>
     </div>
   </div>
 </body>
-
 </html>
