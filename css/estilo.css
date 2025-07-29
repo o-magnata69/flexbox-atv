@@ -61,14 +61,17 @@
 }
 
 .checkerboard {
-  width: 300px;
-  height: 300px;
-  background-image: linear-gradient(45deg, #777 25%, transparent 25%),
-                    linear-gradient(-45deg, #777 25%, transparent 25%),
-                    linear-gradient(45deg, transparent 75%, #777 75%),
-                    linear-gradient(-45deg, transparent 75%, #777 75%);
-  background-size: 40px 40px;
-  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  margin-top: 30px;
+  width: 320px;
+  height: 320px;
+  background-image: 
+    linear-gradient(45deg, #000 25%, transparent 25%),
+    linear-gradient(-45deg, #000 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #000 75%),
+    linear-gradient(-45deg, transparent 75%, #000 75%);
+  background-size: 80px 80px;
+  background-position: 0 0, 0 40px, 40px -40px, -40px 0px;
+  background-color: #888;
 }
 
 .main-menu {
@@ -90,7 +93,9 @@
 .card {
   background-color: #bbb;
   width: 200px;
+  height: 800px;
   padding: 15px;
+  text-align: center;
 }
 
 .card h3 {
@@ -109,15 +114,35 @@
 }
 
 .portal-layout {
+  margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-block {
+  display: flex;
+  width: 100%;
+}
+
+.left-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  flex: 3;
   background-color: #ccc;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+}
+
+.article {
+  flex: 1;
+  background-color: #aaa;
   padding: 20px;
 }
 
@@ -127,21 +152,9 @@
   padding: 20px;
 }
 
-.main-content {
-  display: flex;
-  flex: 3;
-  gap: 10px;
-}
-
-.article {
-  flex: 1;
-  background-color: #aaa;
-  padding: 20px;
-}
-
 .portal-footer {
   background-color: #666;
-  width: 100%;
   padding: 20px;
   color: white;
+  width: 100%;
 }
